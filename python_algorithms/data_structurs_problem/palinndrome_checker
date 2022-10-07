@@ -1,0 +1,23 @@
+from python_algorithms.data_structurs_problem.list_operation import LinkedList
+
+
+def palindrome_check(s):
+    list1 = LinkedList()
+    x = list(s)
+    y = []
+    y.extend(x)
+    x.reverse()
+    if (x == y):
+        return True
+    return False
+
+
+if __name__ == "__main__":
+    s = input("Enter String to check palindrome or not: ")
+    output = palindrome_check(s)
+
+    if output:
+        print("string is Palindrome")
+
+    else:
+        print("string is not Palindrome")
